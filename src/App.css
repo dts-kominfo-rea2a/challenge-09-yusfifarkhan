@@ -1,4 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
 .App {
-  text-align: center;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #dbdffd;
+
+  padding-bottom: 3rem;
+}
+
+.Header,
+.Container {
+  width: 40%;
+  border: 2px solid #ffffff;
+}
+
+.Header {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+
+  background-color: #242f9b;
+  color: #ffffff;
+
+  text-align: center;
+}
+
+.Header .HeaderTitle {
+  font-size: xx-large;
+  font-weight: bold;
+
+  text-transform: uppercase;
+}
+
+.Header .HeaderSubtitle {
+  font-style: italic;
+  font-family: "Roboto Slab", serif;
+
+  text-transform: capitalize;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+
+  background-color: #faf0d7;
+}
+
+.Container > * {
+  flex: 1;
+  padding: 1rem;
+}
+
+.Card {
+  display: flex;
+  flex-direction: row;
+}
+
+.Card > * {
+  flex: 1;
+}
+
+.Card:not(:last-child) {
+  border-bottom: 1px solid #dbdffd;
+  border-width: 80%;
+}
+
+.Card .CardHeader {
+  flex-basis: 30%;
+}
+
+.CardHeader .Avatar {
+  width: 100%;
+  height: fit-content;
+
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.Card .CardBody {
+  flex-basis: 70%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
